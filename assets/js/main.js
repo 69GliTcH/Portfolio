@@ -146,7 +146,7 @@ var typeData = new Typed(".role", {
   const msg =document.getElementById("msg")
 
   form.addEventListener('submit', e => {
-	  msg.innerHTML="Sending..."
+	  document.getElementById("lol").style.display="block"
     e.preventDefault()
     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
       .then(response => {
@@ -158,3 +158,13 @@ var typeData = new Typed(".role", {
       })
       .catch(error => console.error('Error!', error.message))
   })
+
+ var typedData = new Typed(".dots", {
+    strings: [
+        "...",
+    ],
+    loop: true,
+    typeSpeed: 130,
+    backSpeed: 90,
+    backDelay: 1000,
+});

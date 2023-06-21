@@ -731,6 +731,7 @@ row-gap: 1rem;
 }
 #lol{
   display: none;
+  position: absolute;
 }
 #msg{
   font-size: var(--small-font-size);

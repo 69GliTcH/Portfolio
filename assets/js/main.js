@@ -146,6 +146,7 @@ var typeData = new Typed(".role", {
   const msg =document.getElementById("msg")
 
   form.addEventListener('submit', e => {
+	  msg.innerHTML="Sending..."
     e.preventDefault()
     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
       .then(response => {

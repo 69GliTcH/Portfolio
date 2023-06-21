@@ -729,10 +729,12 @@ row-gap: 1rem;
 .contact__form-area textarea{
   resize: none;
 }
+#lol{
+  display: none;
+}
 #msg{
   font-size: var(--small-font-size);
   color: greenyellow;
-  display: block;
 }
 /*############################ footer ############################*/
 .footer{
